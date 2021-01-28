@@ -4,12 +4,26 @@
   box-sizing: border-box;
 }
 .header {
-  width: 100%;  
-  height: 250px;
+  width: 85%;  
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: lightgreen;
+}
+
+.header > p {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #fff;
+}
+
+.header > p > img{
+  width: 100%;
 }
 
 .mas-frecuentes{
@@ -20,15 +34,19 @@
 
 .logo-img{
   height: 250px;
-  width: 250px;
+  width: 300px;
+}
+
+.logo-img2{
+  height: 250px;
+  width: 100%;
 }
 
 .navbar{
   background-color:black;
-  width: 250px;
-  height: 1000px;
-  display: block;
-  position: absolute;
+  width: 15%;
+  height: 100vh; /*vh viewport height*/
+  position: relative;
 
 }
 
@@ -43,34 +61,72 @@
 .navbar-list-item{
   list-style: none;
   color: white;
-  border: 10px solid lightgreen;
-  padding: 15px;
+background-color: lightgreen;
+  padding: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 30px;
   justify-content: center;
   align-items: center;
 }
 
-.main{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  background-color: black;
+.navbar-list-item > a{
+  color: grey;
+  text-decoration: none;
+}
 
+.navbar-list-item:hover{
+  background-color: lime;
+}
+
+.main{
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 250px;
+  right: 0;
+  align-items: center;
+}
+
+.main > p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
+}
+
+.main > a{
+  width: 100%;
+}
+
+.main > a > img{
+  width: 100%;
 }
 
 .footer{
-  display: flex;
+  display: block;
+  position: absolute;
   background-color: lightgreen;
+  width: 85%;
+  bottom: 0;
+  right: 0;
+}
+
+.footer > a > img {
   width: 100%;
-  bottom: 100px;
+
 }
 
  .footer > ul{
   display: flex;
   list-style: none;
+  justify-content: space-between;
+  background-color: forestgreen;
+  width: 100%;
+  align-items: center;
+  
 }
 
 .footer > ul > li{
   padding: 15px;
-} 
+  width: 100%;
+  
+}
