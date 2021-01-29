@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 .header {
   width: 85%;  
   height: 100vh;
@@ -15,15 +16,18 @@
   background-color: lightgreen;
 }
 
+
 .header > p {
-  width: 100%;
+  width: 85%;
   position: absolute;
   top: 0;
+  right:0;
   background-color: #fff;
 }
 
 .header > p > img{
   width: 100%;
+  left: 0;
 }
 
 .mas-frecuentes{
@@ -33,13 +37,14 @@
 }
 
 .logo-img{
-  height: 250px;
-  width: 300px;
+  height: 200px;
+  width: 100%;
 }
 
 .logo-img2{
-  height: 250px;
+  height: 200px;
   width: 100%;
+ 
 }
 
 .navbar{
@@ -47,6 +52,7 @@
   width: 15%;
   height: 100vh; /*vh viewport height*/
   position: relative;
+  left:0;
 
 }
 
@@ -55,7 +61,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-
+  height: 100vh;
 }
 
 .navbar-list-item{
@@ -67,6 +73,7 @@ background-color: lightgreen;
   font-size: 30px;
   justify-content: center;
   align-items: center;
+  height: 195px;
 }
 
 .navbar-list-item > a{
@@ -90,7 +97,13 @@ background-color: lightgreen;
 
 .main > p {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 2rem;
+  font-size: 3rem;
+}
+
+.footer > p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 3rem;
+  bottom: 100px;
 }
 
 .main > a{
@@ -106,8 +119,9 @@ background-color: lightgreen;
   position: absolute;
   background-color: lightgreen;
   width: 85%;
-  bottom: 0;
   right: 0;
+
+  
 }
 
 .footer > a > img {
@@ -128,5 +142,7 @@ background-color: lightgreen;
 .footer > ul > li{
   padding: 15px;
   width: 100%;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 2rem;
   
 }

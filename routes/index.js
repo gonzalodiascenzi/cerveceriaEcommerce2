@@ -18,10 +18,6 @@ router.get('/eventos',  (req, res) => {
   res.render('newViews/eventos');
 })
 
-router.get('/cervezas',  (req, res) => {
-  res.render('newViews/cervezas');
-})
-
 router.get('/local',  (req, res) => {
   res.render('newViews/local');
 })
